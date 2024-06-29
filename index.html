@@ -155,6 +155,7 @@
 <meta name="msapplication-TileColor" content="#da532c"/>
 <meta name="theme-color" content="#ffffff"/>
 <style>
+    
     @media (min-width:900px) {
          .flex-box{
             display: flex;
@@ -176,14 +177,21 @@
       
     }   
     
-    @media (max-width:760px) {
-         .flex-box{
-           width:100%;
-        }
-    
+    @media (max-width: 768px) {
+            .flex-box {
+                grid-template-columns: repeat(2, 1fr) !important;
 
-      
-    }
+            }
+        }
+        @media (max-width: 480px) {
+            .flex-box {
+                grid-template-columns: 1fr !important;
+                display: flex;
+            }
+            
+           
+          
+        }
 </style>
 
 </head>
@@ -879,7 +887,7 @@
 <section style="background: linear-gradient(90deg, rgba(236,236,236,1) 0%, rgba(173,172,101,1) 35%, rgba(73,140,155,1) 100%); padding: 20px; margin-top: 20px;" class="brandsTab customScroll">
     <div class="container xOverflowHidden">
         <div class="row brandsTabHeight">
-            <div class=" horizontal-scroll-wrapper flex-box "  id="brandTabs">
+            <div class=" flex-box "  id="brandTabs">
                 
                 
                     <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px;  border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer">
