@@ -88,37 +88,17 @@
     
 <link rel="stylesheet" href="web-assets/css/style.css">  
     
-
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
     
 
     
     
 <link rel="stylesheet" href="etc.clientlibs/tata/clientlibs/common-empty-page.min.css" type="text/css">
 
-<!-- @import url'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
-@import url(bootstrap.min.css);
-@import url(font-awesome.min.css);
-@import url(hover.css);
-/* @import url(jquery.bxslider.css); */
-@import url(owl.carousel.css);
-@import url(owl.theme.default.min.css);
-@import url(animate.min.css);
-@import url(jquery.bootstrap-touchspin.css);
-@import url('jquery.fancybox.css');
-@import url('prettyPhoto.css'); -->
 
-<!-- <link rel="stylesheet" href="'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i'">
-<link rel="stylesheet" href="'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i'">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
- -->
 
     
     
@@ -133,7 +113,7 @@
 
 <!-- <link rel="stylesheet" href="web-assets/css/style.css"> -->
     
-
+<link rel="stylesheet" href="jquery.flipster.min.css">
     
     
 
@@ -154,45 +134,55 @@
 <!--End for canonical url-->
 <meta name="msapplication-TileColor" content="#da532c"/>
 <meta name="theme-color" content="#ffffff"/>
-<style>
-    
-    @media (min-width:900px) {
-         .flex-box{
-            display: flex;
 
+  <style>
+    .heading{
+        color: rgb(58, 88, 185);
+        /* -webkit-text-stroke:0.3vw #333436 ; */
+        text-transform: uppercase;
+        text-shadow: 5px 5px  #5f5b5b;
+    }
+
+    .heading::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #111112;
+        /* -webkit-text-stroke:0.3vw #333436 ; */
+        border-right: 2px solid #dcdfde;
+        overflow: hidden;
+        animation: animate 6s linear infinite;
+    }
+
+    @keyframes animate {
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%, 90%{
+            width: 100%;
         }
     }
 
-    @media (max-width:900px) {
-         .flex-box{
-            display: block;
-            width: 100%;
-            text-align: center;
-
+    @keyframes appear{
+        from{
+            opacity: 0;
+            scale: 0.5;
         }
-       .over{
-        display:inline-block ;
-       }
-
-      
-    }   
-    
-    @media (max-width: 768px) {
-            .flex-box {
-                grid-template-columns: repeat(2, 1fr) !important;
-
-            }
+        to{
+            opacity: 1;
+            scale: 1;
         }
-        @media (max-width: 480px) {
-            .flex-box {
-                grid-template-columns: 1fr !important;
-                display: flex;
-            }
-            
-           
-          
-        }
-</style>
+    }
+
+    .imgContainer {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+  </style>  
 
 </head>
 
@@ -284,14 +274,14 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark navEffect custNavBar paddingTopInNav" role="navigation">
         <div class="container">
-            <a class="navbar-brand " href="index.html">SR VISION</a>
+            <a class="navbar-brand  " href="index.html">SR VISION</a>
             <button type="button" class="navbar-toggle navBarBtn " data-toggle="collapse" data-target=".collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span  class="sr-only">Toggle navigation</span> -->
-                <svg xmlns="http://www.w3.org/2000/svg" style="color:white;" width="24" height="24" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
-                    <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" color="white" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                   </svg>
-                <!-- <span style="color:white; background-color: white;"  class="navbar-toggler-icon"></span> -->
+                <!-- <span class="sr-only">Toggle navigation</span> -->
             </button>
+           
             <div class="searchIcon pull-right paddingTopNav">
                 <ul class="nav navbar-nav">
                     <li class="nav-item icon TooltipHeader">
@@ -684,6 +674,11 @@
                             Careers
                         </a>
                     </li>
+                    <li class="nav-item navText padTop5">
+                        <a class="nav-link  " href="contact.html">
+                            Contact
+                        </a>
+                    </li>
                     <li class="nav-item icon TooltipHeader topPad">
 						<a class="nav-link worldWideBoxIcon hidden-sm hidden-xs" href="#"></a>
                         <a class="nav-link hidden-lg hidden-md mobileTextSmall" href="#">WorldWide</a>
@@ -783,15 +778,11 @@
         <source media="(min-width: 991px)" srcset="image/business-1012449_1280.webp"/>
         <source media="(min-width: 767px)" srcset="image/business-1012449_1280.webp"/>
         <source media="(min-width: 0)" srcset="image/business-1012449_1280.webp"/>
-        <img class="bg img-responsive " src="image/business-1012449_1280.webp"/>
+        <img class="bg img-responsive" src="image/business-1012449_1280.webp"/>
     </picture>
-    
-        <!-- <video poster="videos/vecteezy_a-billboard-with-a-green-screen-time-lapse_39860052.mp4" playsinline loop autoplay="autoplay" id="bannerVideo" muted desktopVideo="image/business-1012449_1280.webp" mobilePoster="image/business-1012449_1280.webp">
-                   <source src="videos/vecteezy_a-billboard-with-a-green-screen-time-lapse_39860052.mp4" type="video/mp4"/>
-        </video> -->
-    
+
     <div class="imageOverlayBnr">
-        <video controls autoplay muted>
+        <video class="bg-video-wrap" controls autoplay muted>
             <source src="videos/vecteezy_a-billboard-with-a-green-screen-time-lapse_39860052.mp4" alt="" type="video/mp4">
             <source src="videos/vecteezy_a-billboard-with-a-green-screen-time-lapse_39860052.ogg" type="video/ogg">
         </video>
@@ -800,34 +791,54 @@
         <div class="heroHeadline">
             <div class="sectionContent">
                 <div class="bannerHeading">
-                    <span>Brand Finance</span>
-                    <h1 class="heroHeading">
-                        <span>SR VISION MULTIPRENEUR BUSINESS</span>
-                        <span>Ranking for 2024</span>
-                        <span></span></h1>
+                    <h1 class="heroHeading animate__animated animate__bounce">
+                        <span class="heading fw-bold" data-text="SR Vision">SR VISION</span>
+                        <span style="font-size: 20px;">Multipreneur Business Ranking for 2024</span>
+                    </h1>
                 </div>
                 <div class="bannerPara">
                     <div class="bannerBorder pull-left"></div>
-                    <div class="bannerReadingTxt">
-                        <p class="bannerDiv">
-                            SR Vision retains title of India’s most valuable brand, breaking US$25 billion brand value mark for first time.
+                    <div class="bannerReadingTxt" id="typing-text">
+                        <p style="font-size: 15px;" class="bannerDiv">
+                            <span id="line1">SR Vision retains title of India’s most valuable</span><br>
+                            <span id="line2">brand, breaking US$25 billion brand value</span><br>
+                            <span id="line3">mark for first time.</span>
                         </p>
-
-                        
-                            
-                            
-                                <a class="simButton buttonMore btn buttonMr" href="#">
-                                <span>Read More</span>
-                                <img src="common/arrow_icon_white.svg" alt="Arrow" class="readMArrow arrowAnimation"/>
-                            </a>
-                            
-
-                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- <script>
+        function typeEffect(element, speed){
+            var text = element.innerHTML;
+            element.innerHTML='';
+
+            var i = 0;
+            var timer = setInterval(function(){
+                if (i< text.length) {
+                    element.append(text.charAt(i));
+                    i++;
+                } else{
+                    clearInterval(timer);
+                }
+            }, speed);
+        }
+
+        var speed = 75;
+        var h1 = document.querySelector('h1');
+        var p = documentSelector('p');
+        var delay = h1.innerHTML.length * speed + speed
+
+        typeEffect(h1, speed);
+
+        setTimeout(function(){
+            p.style.display = 'inline-block';
+            typeEffect(p,speed);
+        }, delay);
+
+</script> -->
 
     <div class="clear"></div>
     <!-- for share and arrowDown -->
@@ -887,7 +898,7 @@
 <section style="background: linear-gradient(90deg, rgba(236,236,236,1) 0%, rgba(173,172,101,1) 35%, rgba(73,140,155,1) 100%); padding: 20px; margin-top: 20px;" class="brandsTab customScroll">
     <div class="container xOverflowHidden">
         <div class="row brandsTabHeight">
-            <div class=" flex-box "  id="brandTabs">
+            <div class="brandtabimage horizontal-scroll-wrapper  rectangles tabs deskDisp "  id="brandTabs">
                 
                 
                     <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px;  border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer">
@@ -4429,8 +4440,8 @@
 
           
             <div class="icon-bar">
-                <a href="t#" class="facebook"><i class="fa fa-phone"></i></a>
-                <a href="#" class="twitter"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:9322862232" class="facebook"><i class="fa fa-phone"></i></a>
+                <a href="https://wa.me/919322862232" class="twitter"><i class="fab fa-whatsapp"></i></a>
             </div>
                 
         
@@ -4784,7 +4795,7 @@
 
 </div>
 
- <style>
+ <!-- <style>
     .bg-cl-1 {
     background: #044575;
 }
@@ -4822,7 +4833,7 @@
     position: relative;
     z-index: 1;
 }
- </style>   
+ </style>    -->
 
 
 
@@ -4893,14 +4904,28 @@
 	// Resume sliding when mouse is out of the indicators
 	container.addEventListener('mouseout', autoSliding);
 
+    document.addEventListener("DOMContentLoaded", function() {
+        var lines = document.querySelectorAll('.bannerDiv .line');
+        var delay = 0;
+
+        lines.forEach(function(line, index) {
+            line.style.animationDelay = delay + 's';
+            delay += 3; // Adjust this delay to control the timing between lines
+        });
+    });
+
 </script>
         
     
     
 <script src="etc.clientlibs/tata/clientlibs/brands.min.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+<script src="jquery.flipster.min.js"></script>
 
-
+<script>
+    $('.brandtabimage').flipster();
+</script>
     
     
 <script src="etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.js"></script>
