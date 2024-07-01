@@ -152,7 +152,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         height: 100%;
         color: #111112;
         /* -webkit-text-stroke:0.3vw #333436 ; */
-        border-right: 2px solid #dcdfde;
+        /* border-right: 2px solid #dcdfde; */
         overflow: hidden;
         animation: animate 6s linear infinite;
     }
@@ -182,6 +182,152 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         animation-timeline: view();
         animation-range: entry 0 cover 40%;
     }
+
+
+        .bannerReadingTxt {
+            display: inline-block;
+            overflow: hidden; /* Ensures the text does not overflow */
+            white-space: nowrap; /* Keeps the text on a single line */
+            /* border-right: 0.15em solid orange;  */
+            font-size: 18px;
+            opacity: 0;
+            background:linear-gradient(90deg, #e4f009, #d9e6e6); /* Gradient colors */
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: typing 6s steps(40, end) infinite, blink-caret 0.65s step-end infinite;
+        }
+
+        @keyframes typing {
+            0%, 100% { width: 0; opacity: 0; }
+            10%, 90% { width: 100%; opacity: 1; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+
+        .bannerReadingTxt:nth-child(1) {
+            animation-delay: 0s, 0s;
+        }
+
+        .bannerReadingTxt:nth-child(2) {
+            animation-delay: 3s, 3s;
+        }
+
+        .bannerReadingTxt:nth-child(3) {
+            animation-delay: 6s, 6s;
+        }
+
+
+    .brandtabimage {
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.over {
+    border: 1px solid whitesmoke;
+    box-shadow: 5px 5px 8px 5px #888888;
+    padding: 10px 6px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    height: 120px;
+    transition: transform 0.3s ease;
+}
+.centered {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.brandtablinks {
+    font-size: 1em;
+}
+
+@media (max-width: 991px) {
+    .centered {
+        width: 35px;
+    }
+
+    .brandtablinks {
+        font-size: 0.9em;
+    }
+}
+
+
+    @media (max-width: 767px) {
+        
+           .heading{
+            font-size: 40px;
+           }
+
+           .heroHeadline {
+                padding: 10px;
+            }
+
+            .bannerHeading h1 {
+                font-size: 34px;
+            }
+
+            .bannerHeading .hero{
+               width: 50px;
+               line-height: 20px;
+            }
+
+
+            .bannerReadingTxt {
+                font-size:10px;
+            }
+
+            .heading::before {
+                -webkit-text-stroke: 0.2vw #333436;
+            }
+
+            .bannerReadingTxt p {
+                font-size: 0.875rem;
+            }
+
+
+            .brandtabimage{
+               display: flex;
+              flex-direction: column;
+              flex-wrap: nowrap;
+               margin: 5px;
+               -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+              padding: 5px;
+               overflow-x: scroll;
+            }
+
+            .over{
+                display: inline-block;
+            }
+
+            .brandtablinks {
+                font-size: 0.8em;
+             }
+        }
+
+    @media (max-width: 480px) {
+
+        .heading{
+            font-size: 20px;
+           }
+
+
+            .bannerHeading h1 {
+                font-size: 30px;
+            }
+
+            .heading::before {
+                -webkit-text-stroke: 0.15vw #333436;
+            }
+
+            /* .bannerReadingTxt p {
+                font-size: 0.75rem;
+            } */
+        }
+
   </style>  
 
 </head>
@@ -274,7 +420,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark navEffect custNavBar paddingTopInNav" role="navigation">
         <div class="container">
-            <a class="navbar-brand  " href="index.html">SR VISION</a>
+            <a class="navbar-brand  " href="index.html"><img style="width: 60px; border-radius: 50%;"  src="image/sr logo.jpg" alt=""></a>
             <button type="button" class="navbar-toggle navBarBtn " data-toggle="collapse" data-target=".collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" color="white" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -338,39 +484,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                                             
                                         </li>
                                     
-                                        <!-- <li class="liItems">
-                                            
-                                            
-                                                <a href="about-us/tata-code-of-conduct.html">Tata Code of Conduct</a>
-                                            
-                                        </li> -->
                                     
                                 </ul>
+                          
                                 <!-- <ul class="itemA list-unstyled">
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="about-us/tata-group-our-heritage.html">Heritage</a>
-                                            
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="management-team.html">Leadership</a>
-                                            
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="about-us/sponsorships.html">Sponsorships</a>
-                                            
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="itemA list-unstyled">
                                     
                                         <li class="liItems">
                                             
@@ -386,39 +503,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                                             
                                         </li>
                                     
-                                </ul> -->
-                            <!-- </li>
-                            <li class="subHead marginT20">
-                                <span>Investors</span>
-                            </li>
-                            <li>
-                                <hr class="subHeadBorder hidden-xs hidden-sm"/>
-                            </li>
-                            <li class="liItems horizonIn">
-                                <a href="investors.html">Investor Section</a>
-                            </li> -->
-                            <!-- <li class="colCount3 marginT30 marT25">
-                                <ul class="itemA list-unstyled">
-                                    
-                                        <li class="liItems">
-                                            <a href="investors/companies.html">Companies</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="investors/stock-data.html">Stock Data</a>
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="itemA list-unstyled">
-                                    
-                                        <li class="liItems">
-                                            <a href="business/overview.html">Business Verticals</a>
-                                        </li>
-                                    
-                                </ul> -->
-                                <!-- <ul class="itemA list-unstyled">
-                                    
-                                </ul> -->
+                                </ul>  -->
+                
                             </li>
                         </ul>
                     </li>
@@ -427,248 +513,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                         <a  class="nav-link " href="business.html" data-toggle="collapse">
                             Business
                         </a>
-                        <!-- <ul class="panel list-unstyled drops">
-                            <li class="subHead">
-                                <span>Business Overview</span>
-                            </li>
-                            <li>
-                                <hr class="subHeadBorder hidden-xs hidden-sm"/>
-                            </li>
-                            <li class="liItems horizonIn">
-
-                                <a href="business/overview.html">Learn more</a>
-
-                            </li>
-                            <li class="subHead marginT20">
-                                <span>Our Brands</span>
-                            </li>
-                            <li>
-                                <hr class="subHeadBorder hidden-xs hidden-sm"/>
-                            </li>
-                            <li class="liItems horizonIn">
-                                <a href="index.html">Browse select Our brands</a>
-                            </li>
-                            <li class="subHead marginT20">
-                                <span>Business Verticals</span>
-                            </li>
-                            <li>
-                                <hr class="subHeadBorder hidden-xs hidden-sm"/>
-                            </li>
-                            <li class="colCount3">
-                                <ul class="list-unstyled itemA">
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Power Solution</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Manufacturing Industry</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Agri Business</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="#">SEO &amp; Advertising</a>
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="list-unstyled itemA">
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Skill & Social Development</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Counsultancy Solution</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Tour &amp; Travel</a>
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="list-unstyled itemA">
-                                    
-                                        <li class="liItems">
-                                            <a href="business/tourism-travel.html">Tourism &amp; Travel</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="business/telecom-media.html">Telec &amp; Media</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="business/trading-investments.html">Trading &amp; Investments</a>
-                                        </li>
-                                    
-                                </ul>
-                            </li>
-                        </ul> -->
+        
                     </li>
                     <div class="backdrop"></div> 
-                    <!-- <li class="nav-item navText megaMenu padTop5">
-                        <a class="nav-link accordion  " data-toggle="collapse">
-                            Community
-                        </a>
-                        <ul class="panel list-unstyled drops communityPanel">
-                            <li class="subHead">
-                                <span>Overview</span>
-                            </li>
-                            <li>
-                                <hr class="subHeadBorder hidden-xs hidden-sm"/>
-                            </li>
-                            <li class="liItems horizonIn">
-                                <a href="community.html">Areas of Work</a>
-                            </li>
-                            <li class="colCount3 marginT30 marT25">
-                                <ul class="itemA list-unstyled">
-                                    
-                                        <li class="liItems">
-                                            <a href="community/health.html">Health</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="community/education.html">Education</a>
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="itemA list-unstyled">
-                                    
-                                        <li class="liItems">
-                                            <a href="community/empowerment.html">Empowerment</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="community/environment.html">Environment</a>
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="itemA list-unstyled">
-                                    
-                                </ul>
-                            </li>
-                        </ul>
-                    </li> -->
-                    <!-- <li class="nav-item navText megaMenu padTop5">
-                        <a class="nav-link accordion  " data-toggle="collapse">
-                            About Us
-                        </a>
-                        <ul class="panel list-unstyled aboutPanel">
-                            <li class="subHead">
-                                <span>The Tata group</span>
-                            </li>
-                            <li>
-                                <hr class="subHeadBorder hidden-xs hidden-sm"/>
-                            </li>
-                            <li class="liItems horizonIn">
-                                <a href="about-us.html">About the Tata Group</a>
-                            </li>
-                            <li class="colCount3 marginT30 marT25">
-                                <ul class="itemA list-unstyled">
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="business/tata-sons.html">Tata Sons</a>
-                                            
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="about-us/tata-values-purpose.html">Values and Purpose</a>
-                                            
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="about-us/tata-code-of-conduct.html">Tata Code of Conduct</a>
-                                            
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="itemA list-unstyled">
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="about-us/tata-group-our-heritage.html">Heritage</a>
-                                            
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="management-team.html">Leadership</a>
-                                            
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="about-us/sponsorships.html">Sponsorships</a>
-                                            
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="itemA list-unstyled">
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="about-us/sustainability.html">Sustainability</a>
-                                            
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            
-                                            
-                                                <a href="about-us/innovation.html">Innovation</a>
-                                            
-                                        </li>
-                                    
-                                </ul>
-                            </li>
-                            <li class="subHead marginT20">
-                                <span>Investors</span>
-                            </li>
-                            <li>
-                                <hr class="subHeadBorder hidden-xs hidden-sm"/>
-                            </li>
-                            <li class="liItems horizonIn">
-                                <a href="investors.html">Investor Section</a>
-                            </li>
-                            <li class="colCount3 marginT30 marT25">
-                                <ul class="itemA list-unstyled">
-                                    
-                                        <li class="liItems">
-                                            <a href="investors/companies.html">Companies</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="investors/stock-data.html">Stock Data</a>
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="itemA list-unstyled">
-                                    
-                                        <li class="liItems">
-                                            <a href="business/overview.html">Business Verticals</a>
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="itemA list-unstyled">
-                                    
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <div class="backdrop"></div> -->
-                    <!-- <div class="backdrop"></div> -->
-            
+                   
                     <li class="nav-item navText padTop5">
                         <a class="nav-link  " href="careers.html">
                             Careers
@@ -791,18 +639,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <div class="heroHeadline">
             <div class="sectionContent">
                 <div class="bannerHeading">
-                    <h1 class="heroHeading animate__animated animate__bounce">
-                        <span class="heading fw-bold" data-text="SR Vision">SR VISION</span>
-                        <span style="font-size: 20px;">Multipreneur Business Ranking for 2024</span>
+                    <h1 class="heroHeading ">
+                        <div  class="heading fw-bold" data-text="SR Vision">SR VISION</div>
+                        <div style="font-size: 25px;" class="hero">Multipreneur Business<br>Ranking for 2024</div>
                     </h1>
                 </div>
                 <div class="bannerPara">
                     <div class="bannerBorder pull-left"></div>
-                    <div class="bannerReadingTxt" id="typing-text">
-                        <p style="font-size: 15px;" class="bannerDiv">
-                            <span id="line1">SR Vision retains title of India’s most valuable</span><br>
-                            <span id="line2">brand, breaking US$25 billion brand value</span><br>
-                            <span id="line3">mark for first time.</span>
+                    <div   class="bannerReadingTxt" id="typing-text">
+                        <p class="bannerDiv">
+                            <span class="bannerReadingTxt" id="line1">SR Vision retains title of India’s most </span><br>
+                            <span class="bannerReadingTxt" id="line2">valuable brand, breaking US$25 billion </span><br>
+                            <span class="bannerReadingTxt" id="line3">brand value mark for first time.</span>
                         </p>
                     </div>
                 </div>
@@ -810,35 +658,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </div>
     </div>
 
-    <!-- <script>
-        function typeEffect(element, speed){
-            var text = element.innerHTML;
-            element.innerHTML='';
-
-            var i = 0;
-            var timer = setInterval(function(){
-                if (i< text.length) {
-                    element.append(text.charAt(i));
-                    i++;
-                } else{
-                    clearInterval(timer);
-                }
-            }, speed);
-        }
-
-        var speed = 75;
-        var h1 = document.querySelector('h1');
-        var p = documentSelector('p');
-        var delay = h1.innerHTML.length * speed + speed
-
-        typeEffect(h1, speed);
-
-        setTimeout(function(){
-            p.style.display = 'inline-block';
-            typeEffect(p,speed);
-        }, delay);
-
-</script> -->
 
     <div class="clear"></div>
     <!-- for share and arrowDown -->
@@ -898,10 +717,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <section style="background: linear-gradient(90deg, rgba(236,236,236,1) 0%, rgba(173,172,101,1) 35%, rgba(73,140,155,1) 100%); padding: 20px; margin-top: 20px;" class="brandsTab customScroll">
     <div class="container xOverflowHidden">
         <div class="row brandsTabHeight">
-            <div class="brandtabimage horizontal-scroll-wrapper  rectangles tabs deskDisp "  id="brandTabs">
+            <div class="brandtabimage horizontal-scroll-wrapper flex-box"  id="brandTabs">
                 
                 
-                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px;  border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer">
+                    <div  class="over cursorPointer">
                         
                         <img style="width: 40px;" class="centered noDisplay" src="image/battery-charging (1).svg" alt="Popular Brands"/>
                         <img style="width: 40px;" class="centered  active" src="image/battery-charging (1).svg" alt="Popular Brands"/>
@@ -910,7 +729,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; background-color: white;" class="over cursorPointer">
+                    <div  class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/tools.svg" alt="Cars and Auto"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/tools.svg" alt="Cars and Auto"/>
@@ -920,7 +739,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer">
+                    <div class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/camera-reels.svg" alt="Technology"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/camera-reels.svg" alt="Technology"/>
@@ -930,7 +749,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer">
+                    <div  class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/journal-bookmark-fill.svg" alt="Durables"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/journal-bookmark-fill.svg" alt="Durables"/>
@@ -940,7 +759,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer">
+                    <div  class="over cursorPointer">
                         
                         <img style="width: 40px;" class="centered" src="image/agrib.jpg" alt="Finance"/>
                         <img style="width: 40px;" class="centered noDisplay active" src="image/agrib.jpg" alt="Finance"/>
@@ -950,7 +769,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; background-color: white;" class="over cursorPointer">
+                    <div  class="over cursorPointer">
                         
                         <img style="width: 90px;" class="centered" src="image/seo_digital_marketing_monotone_icon_slide01.jpg" alt="Lifestyle"/>
                         <img style="width: 90px;" class="centered noDisplay active" src="image/seo_digital_marketing_monotone_icon_slide01.jpg" alt="Lifestyle"/>
@@ -960,7 +779,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; background-color: white;" class="over cursorPointer">
+                    <div  class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/person-arms-up.svg" alt="Food &amp; Beverages"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/person-arms-up.svg" alt="Food &amp; Beverages"/>
@@ -970,7 +789,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; background-color: white;" class="over cursorPointer">
+                    <div  class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/people-fill.svg" alt="Retail &amp; Ecommerce"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/people-fill.svg" alt="Retail &amp; Ecommerce"/>
@@ -980,7 +799,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; background-color: white;" class="over cursorPointer">
+                    <div  class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/globe-asia-australia.svg" alt="Travel"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/globe-asia-australia.svg" alt="Travel"/>
