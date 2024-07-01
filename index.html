@@ -183,6 +183,36 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         animation-range: entry 0 cover 40%;
     }
 
+    .brandsTab {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    .welcome-area {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    .bg-video-wrap{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    .faq-content-area{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    .brandsCrousel {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
 
         .bannerReadingTxt {
             display: inline-block;
@@ -219,42 +249,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             animation-delay: 6s, 6s;
         }
 
+        
 
-    .brandtabimage {
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.over {
-    border: 1px solid whitesmoke;
-    box-shadow: 5px 5px 8px 5px #888888;
-    padding: 10px 6px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    background-color: white;
-    text-align: center;
-    height: 120px;
-    transition: transform 0.3s ease;
-}
-.centered {
-    width: 40px;
-    margin-bottom: 10px;
-}
-
-.brandtablinks {
-    font-size: 1em;
-}
-
-@media (max-width: 991px) {
-    .centered {
-        width: 35px;
-    }
-
-    .brandtablinks {
-        font-size: 0.9em;
-    }
-}
-
+        @media(min-width:767px){
+            .heading{
+            font-size: 60px;
+           }
+        }
 
     @media (max-width: 767px) {
         
@@ -287,25 +288,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             .bannerReadingTxt p {
                 font-size: 0.875rem;
             }
-
-
-            .brandtabimage{
-               display: flex;
-              flex-direction: column;
-              flex-wrap: nowrap;
-               margin: 5px;
-               -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
-              padding: 5px;
-               overflow-x: scroll;
-            }
-
-            .over{
-                display: inline-block;
-            }
-
-            .brandtablinks {
-                font-size: 0.8em;
-             }
         }
 
     @media (max-width: 480px) {
@@ -717,10 +699,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <section style="background: linear-gradient(90deg, rgba(236,236,236,1) 0%, rgba(173,172,101,1) 35%, rgba(73,140,155,1) 100%); padding: 20px; margin-top: 20px;" class="brandsTab customScroll">
     <div class="container xOverflowHidden">
         <div class="row brandsTabHeight">
-            <div class="brandtabimage horizontal-scroll-wrapper flex-box"  id="brandTabs">
+            <div class="brandtabimage horizontal-scroll-wrapper  rectangles tabs deskDisp "  id="brandTabs">
                 
                 
-                    <div  class="over cursorPointer">
+                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px;  border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer">
                         
                         <img style="width: 40px;" class="centered noDisplay" src="image/battery-charging (1).svg" alt="Popular Brands"/>
                         <img style="width: 40px;" class="centered  active" src="image/battery-charging (1).svg" alt="Popular Brands"/>
@@ -729,7 +711,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div  class="over cursorPointer">
+                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; background-color: white;" class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/tools.svg" alt="Cars and Auto"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/tools.svg" alt="Cars and Auto"/>
@@ -739,7 +721,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div class="over cursorPointer">
+                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/camera-reels.svg" alt="Technology"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/camera-reels.svg" alt="Technology"/>
@@ -749,7 +731,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div  class="over cursorPointer">
+                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/journal-bookmark-fill.svg" alt="Durables"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/journal-bookmark-fill.svg" alt="Durables"/>
@@ -759,7 +741,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div  class="over cursorPointer">
+                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer">
                         
                         <img style="width: 40px;" class="centered" src="image/agrib.jpg" alt="Finance"/>
                         <img style="width: 40px;" class="centered noDisplay active" src="image/agrib.jpg" alt="Finance"/>
@@ -769,7 +751,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div  class="over cursorPointer">
+                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; background-color: white;" class="over cursorPointer">
                         
                         <img style="width: 90px;" class="centered" src="image/seo_digital_marketing_monotone_icon_slide01.jpg" alt="Lifestyle"/>
                         <img style="width: 90px;" class="centered noDisplay active" src="image/seo_digital_marketing_monotone_icon_slide01.jpg" alt="Lifestyle"/>
@@ -779,7 +761,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div  class="over cursorPointer">
+                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; background-color: white;" class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/person-arms-up.svg" alt="Food &amp; Beverages"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/person-arms-up.svg" alt="Food &amp; Beverages"/>
@@ -789,7 +771,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div  class="over cursorPointer">
+                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; background-color: white;" class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/people-fill.svg" alt="Retail &amp; Ecommerce"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/people-fill.svg" alt="Retail &amp; Ecommerce"/>
@@ -799,7 +781,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
             
                 
-                    <div  class="over cursorPointer">
+                    <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px; border-radius: 20px; background-color: white;" class="over cursorPointer">
                         
                         <img style="width: 30px;" class="centered" src="image/globe-asia-australia.svg" alt="Travel"/>
                         <img style="width: 30px;" class="centered noDisplay active" src="image/globe-asia-australia.svg" alt="Travel"/>
