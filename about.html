@@ -137,6 +137,42 @@
 <!--End for canonical url-->
 <meta name="msapplication-TileColor" content="#da532c"/>
 <meta name="theme-color" content="#ffffff"/>
+
+<style>
+   .about-heading img{
+     border-radius: 50%;
+     width: 300px;
+   } 
+
+   @media (max-width:767px) {
+    .about-heading img{
+     border-radius: 50%;
+     width: 130px;
+     margin: 18px;
+   } 
+
+
+   }
+
+   @keyframes appear{
+        from{
+            opacity: 0;
+            scale: 0.5;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+    .about , .about-heading img, .why-innovation, .founder, .founder-heading, .sec-title, .img-holder, .why-vrisa, .slogan-area, .slogan, .life-img {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+</style>
+
 </head>
 
 <body class="basepage page basicpage" id="basepage-e91798cdf6">
@@ -379,85 +415,7 @@
                         <a class="nav-link " href="business.html" data-toggle="collapse">
                             Business
                         </a>
-                        <!-- <ul class="panel list-unstyled drops">
-                            <li class="subHead">
-                                <span>Business Overview</span>
-                            </li>
-                            <li>
-                                <hr class="subHeadBorder hidden-xs hidden-sm"/>
-                            </li>
-                            <li class="liItems horizonIn">
 
-                                <a href="business/overview.html">Learn more</a>
-
-                            </li>
-                            <li class="subHead marginT20">
-                                <span>Our Brands</span>
-                            </li>
-                            <li>
-                                <hr class="subHeadBorder hidden-xs hidden-sm"/>
-                            </li>
-                            <li class="liItems horizonIn">
-                                <a href="index.html">Browse select Our brands</a>
-                            </li>
-                            <li class="subHead marginT20">
-                                <span>Business Verticals</span>
-                            </li>
-                            <li>
-                                <hr class="subHeadBorder hidden-xs hidden-sm"/>
-                            </li>
-                            <li class="colCount3">
-                                <ul class="list-unstyled itemA">
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Power Solution</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Manufacturing Industry</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Agri Business</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="#">SEO &amp; Advertising</a>
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="list-unstyled itemA">
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Skill & Social Development</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Counsultancy Solution</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="#">Tour &amp; Travel</a>
-                                        </li>
-                                    
-                                </ul>
-                                <ul class="list-unstyled itemA">
-                                    
-                                        <li class="liItems">
-                                            <a href="business/tourism-travel.html">Tourism &amp; Travel</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="business/telecom-media.html">Telec &amp; Media</a>
-                                        </li>
-                                    
-                                        <li class="liItems">
-                                            <a href="business/trading-investments.html">Trading &amp; Investments</a>
-                                        </li>
-                                    
-                                </ul>
-                            </li>
-                        </ul> -->
                     </li>
                     <div class="backdrop"></div> 
                    
@@ -478,8 +436,8 @@
                     </li>
                     <li class="nav-item icon TooltipHeader topPad">
 						<a class="nav-link contactUsBoxIcon hidden-sm hidden-xs" href="#"></a>
-                        <a class="nav-link hidden-lg hidden-md mobileTextSmall" href="#">Contact Us</a>
-                        <span class="tooltiptextHeader">Contact Us</span>
+                        <a class="nav-link hidden-lg hidden-md mobileTextSmall" href="#">Mail Us</a>
+                        <span class="tooltiptextHeader">Mail Us</span>
                     </li>
                 </ul>
             </div>
@@ -655,7 +613,7 @@ height: 621px; ">
 
                     <div style="text-align: center; align-items: center;" class="col-md-6">
                         <div class="about-heading">
-                        <h1><b>SR VISION</b></h1>
+                        <h1><img src="image/sr logo.jpg" alt=""></h1>
                     </div>
                 </div>
             </div>
@@ -668,30 +626,30 @@ height: 621px; ">
     <div class="container">
         <div class="row why-vrisa-innova">
            <div class="why">
-            <h1><b>Why SR Vision</b></h1>
+            <h1 style="font-style: italic; font-size: 50px; padding-bottom: 30px; color: rgb(231, 4, 4);"><b>Why SR Vision</b></h1>
             </div>
 
-                <div style=" margin: 10px; width: 100%; " class="col-md-4">
-                    <div class="why-vrisa">
+                <div style=" margin: 20px; width: 100%; " class="col-md-4">
+                    <div style="box-shadow: 2px 2px 2px 2px gray; border-radius: 5px; padding: 15px; margin: 10px;" class="why-vrisa">
                     <i class="fa-solid fa-house"></i>
                    <h3>OUR VISION</h3>
-                        <p>To be the leading provider of innovative solutions that empower businesses to reach their full potential. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?To be the leading provider of innovative solutions that empower businesses to reach their full potential. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?</p>
+                        <p style="font-style: italic;">To be the leading provider of innovative solutions that empower businesses to reach their full potential. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?To be the leading provider of innovative solutions that empower businesses to reach their full potential. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?</p>
                 </div>
                 </div>
 
                 <div style=" margin: 10px; width: 100%; " class="col-md-4">
-                    <div class="why-vrisa">
+                    <div style="box-shadow: 2px 2px 2px 2px gray; border-radius: 5px; padding: 15px; margin: 10px;" class="why-vrisa">
                         <i class="fa-solid fa-earth-americas"></i>
                    <h3>OUR MISSION</h3>
-                        <p>Our mission is to deliver high-quality products and services that create value for our customers, partners, and stakeholders.vLorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?</p>
+                        <p style="font-style: italic;">Our mission is to deliver high-quality products and services that create value for our customers, partners, and stakeholders.vLorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?</p>
                 </div>
                 </div>
 
                 <div style=" margin: 10px; width: 100%; " class="col-md-4">
-                    <div class="why-vrisa">
+                    <div style="box-shadow: 2px 2px 2px 2px gray; border-radius: 5px; padding: 15px; margin: 10px;" class="why-vrisa">
                         <i class="fa-regular fa-hand-peace"></i>
                    <h3>OUR HISTORY</h3>
-                        <p>Founded in [Year], SR Vision has grown from a small startup to an industry leader. Over the years, we have expanded our offerings and built a reputation for excellence and innovation.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora  </p>
+                        <p style="font-style: italic;">Founded in [Year], SR Vision has grown from a small startup to an industry leader. Over the years, we have expanded our offerings and built a reputation for excellence and innovation.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora rerum aliquam exercitationem doloremque natus tenetur fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Sequi quasi commodi voluptates porro quas similique deleniti nemo beatae, voluptatem illo. Tempora  </p>
                 </div>
                 </div>
         </div>
@@ -727,17 +685,17 @@ height: 621px; ">
          </div>
     </div>
 
-<div class="philosophy">
+<!-- <div class="philosophy">
     <div class="container">
         <div class="row">
 
             <div class="col-md-7">
-<!-- <div class="philosophy-heading">
+<div class="philosophy-heading">
     <h2>PHILOSOPHY</h2>
     <hr>
 <p>Vrisa Innovation limited, is committed in serving our clients with professionalism, honesty, transparency, dedication, time, knowledge and expertise to ensure successful and stress-free transactions.</p>
-</div> -->
 </div>
+</div> -->
 
 <!-- <div class="col-md-5">
     <div class="philosophy-heading">
@@ -750,12 +708,12 @@ height: 621px; ">
 
 
     <div class="founder">
-        <div class="container">
+        <div style="margin-top: 40px;" class="container">
             <div class="row">
 
     <div class="col-md-6">
         <div class="founder-heading">
-            <h2>FOUNDER</h2>
+            <h2 style="color: rgb(2, 2, 15);"><b>FOUNDER</b></h2>
             <hr>
             <h2>S R</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore consequuntur impedit dignissimos porro? Molestias sapiente, laboriosam corporis odio distinctio quos aperiam maiores, eveniet laudantium in sed fuga natus. Quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus aspernatur mollitia, dolorum est cupiditate animi dignissimos a numquam beatae distinctio minus dicta facere sunt iusto ratione sit id laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus dolores aut adipisci nostrum. Voluptates, quidem sed nam ut corrupti soluta quod aperiam, culpa ad tempora nesciunt blanditiis sunt optio!</p>
@@ -764,7 +722,7 @@ height: 621px; ">
 
 <div class="col-md-6">
     <div class="founder-heading">
-    <img style="height: 400px;" src="image/person1.webp" alt="">
+    <img style="height: 350px;" src="image/person1.webp" alt="">
 </div>
 </div>
             </div>
@@ -776,7 +734,7 @@ height: 621px; ">
 <!--Start our team area-->
 <section class="team-area">
     <div class="container">
-        <div class="sec-title">
+        <div style="padding-top: 50px;" class="sec-title">
             <h2>Meet The <span>Team</span></h2>
             <span class="decor"></span>
             <p>Our people are our greatest asset . They represent a rare synergy of human genius applied to life-changing processes and technologies. Our people represent diverse nationalities, cultures, genders, abilities, generations and experiences.</p>
@@ -792,7 +750,9 @@ height: 621px; ">
                 <div class="box">
                     <div class="content">
                         <ul>
-                            <li><a href="#" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                              </svg></a></li>
                             <li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                             <li><a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
@@ -854,6 +814,7 @@ height: 621px; ">
         </div>
     </div>
 </div>
+
 
 <div class="col-md-4">
     <div class="single-team-member">
@@ -1038,13 +999,13 @@ height: 621px; ">
 
 
 <!--Start slogan area-->
-<section class="slogan-area bg-clr-1" style="background-image:url(web-assets/images/resources/slogan.jpg);">
+<section class="slogan-area bg-clr-1" style="background-image:url(web-assets/images/resources/slogan.jpg); margin-top: 40px; height: 200px; text-align: center;">
     <div class="container">
-        <div class="row">
+        <div  class="row">
             <div class="col-md-12">
-                <div class="slogan slogan1">
-                    <h3>Philosophy</h3>
-                    <p>SR Vision, is committed in serving our clients with professionalism, honesty, transparency, dedication, time, knowledge and expertise to ensure successful and stress-free transactions.</p>
+                <div style="padding-top: 30px;" class="slogan slogan1">
+                    <h2><b>Philosophy</b></h2>
+                    <p style="font-size: 16px;">SR Vision, is committed in serving our clients with professionalism, honesty, transparency, dedication, time, knowledge and expertise to ensure successful and stress-free transactions.</p>
                 </div>
             </div>
         </div>
@@ -1055,12 +1016,12 @@ height: 621px; ">
 
 <!--Start Founder area-->
 <div class="fact-counter-area">
-    <div class="container">
+    <div style="margin-top: 40px;" class="container">
         <div class="sec-title">
             <h2>Life at <span>SR Vission</span></h2>
             <span class="decor"></span>
         </div>
-        <div class="row">
+        <div style="padding-top: 40px;" class="row">
             <div class="col-md-4">
                 <div class="life-img">
                     <img src="web-assets/images/team/life-at-vrisa/1.jpg" alt="Readymade Home" class="img-thumbnail">
