@@ -353,6 +353,20 @@ body.curtain-open #curtain-right {
 }
 
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-img {
+    animation: rotate 4s linear infinite;
+   
+}
+
 
   </style>  
 
@@ -738,7 +752,7 @@ body.curtain-open #curtain-right {
 <section style="background: linear-gradient(90deg, rgba(236,236,236,1) 0%, rgba(173,172,101,1) 35%, rgba(73,140,155,1) 100%); padding: 20px; margin-top: 20px;" class="brandsTab customScroll">
     <div class="container xOverflowHidden">
         <div class="row brandsTabHeight">
-            <div class="brandtabimage horizontal-scroll-wrapper  rectangles tabs deskDisp flex-box "  id="brandTabs">
+            <div class="brandtabimage horizontal-scroll-wrapper  rectangles tabs deskDisp  "  id="brandTabs">
                 
                 
                     <div style="border: 1px solid whitesmoke; box-shadow: 5px 5px 8px 5px #888888; padding: 10px 6px; margin-bottom: 20px;  border-radius: 20px; height: 120px; background-color: white;" class="over cursorPointer ">
@@ -3840,7 +3854,7 @@ body.curtain-open #curtain-right {
                     <p><strong></strong></p>
                     <div class="bottom">
                         <div style="background: #044575; border-radius: 10px;" class="button">
-                            <a class="thm-btn bg-cl-1" href="about-us.html">More About Us</a>
+                            <a class="thm-btn bg-cl-1" href="about.html">More About Us</a>
                         </div>
                         <!-- <div class="title">
                         <h3>Request Quote: <span>freequote@gmail.com</span></h3>
@@ -3850,7 +3864,7 @@ body.curtain-open #curtain-right {
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="about-img">
-                    <img style="width: 400px;" src="web-assets/images/about/about02.png" alt="Designer resort">
+                    <img class="rotate-img" style="width: 500px; padding-right: 60px;" src="web-assets/images/about/about02.png" alt="Designer resort">
                 </div>
             </div>
 
@@ -4716,6 +4730,9 @@ body.curtain-open #curtain-right {
             delay += 3; // Adjust this delay to control the timing between lines
         });
     });
+
+
+observer.observe(document.body, { attributes: true, childList: true, subtree: true });
 
 </script>
         
