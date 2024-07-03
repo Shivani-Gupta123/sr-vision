@@ -205,6 +205,52 @@
             background-color: #228519; /* Phone color */
         }
 
+        .single-team-member .img-holder {
+            position: relative;
+        }
+        .single-team-member .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .single-team-member:hover .overlay {
+            opacity: 1;
+        }
+        .single-team-member .overlay .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .single-team-member .overlay .box .content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .single-team-member .overlay .box .content ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .single-team-member .overlay .box .content ul li a {
+            color: #fff;
+            font-size: 24px;
+        }
+        .text-holder {
+            padding: 20px;
+            background: #fff;
+        }
+        .text-holder h3 {
+            margin: 0;
+        }
+        .text-holder p {
+            margin: 5px 0 0;
+            color: #777;
+        }
+
 </style>
 
 </head>
@@ -768,7 +814,7 @@ height: 621px; ">
 <!--Start our team area-->
 <section class="team-area">
     <div class="container">
-        <div style="padding-top: 50px;" class="sec-title">
+        <div style="padding-top: 50px;" class="sec-title text-center">
             <h2>Meet The <span>Team</span></h2>
             <span class="decor"></span>
             <p>Our people are our greatest asset . They represent a rare synergy of human genius applied to life-changing processes and technologies. Our people represent diverse nationalities, cultures, genders, abilities, generations and experiences.</p>
@@ -776,7 +822,7 @@ height: 621px; ">
         </div>
 
         <div class="row">
-<div class="col-md-4">
+<div class="col-md-4 col-sm-6">
     <div class="single-team-member">
         <div class="img-holder">
             <img style="height: 250px;" src="image/person2.webp" alt=" Readymade Home">
@@ -802,7 +848,7 @@ height: 621px; ">
 </div>
 
 
-<div class="col-md-4">
+<div class="col-md-4 col-sm-6">
     <div class="single-team-member">
         <div class="img-holder">
             <img style="height: 250px;" src="image/person.webp" alt="Portable Home">
@@ -826,7 +872,7 @@ height: 621px; ">
 
 </div>
 
-<div class="col-md-4">
+<div class="col-md-4 col-sm-6">
     <div class="single-team-member">
         <div class="img-holder">
             <img style="height: 250px;" src="image/person4.webp" alt="Readymade House">
@@ -850,7 +896,7 @@ height: 621px; ">
 </div>
 
 
-<div class="col-md-4">
+<div class="col-md-4 col-sm-6">
     <div class="single-team-member">
         <div class="img-holder">
             <img style="height: 250px;" src="image/person4.webp" alt=" luxury villas in India">
@@ -875,7 +921,7 @@ height: 621px; ">
 
 
 
-<div class="col-md-4">
+<div class="col-md-4 col-sm-6">
     <div class="single-team-member">
         <div class="img-holder">
             <img style="height: 250px;" src="image/person1.webp" alt="Manufacture of Modular Construction">
