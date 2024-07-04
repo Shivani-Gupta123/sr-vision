@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>popular brands</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="popular-brands" transform="translate(1.000000, 1.000000)" fill-rule="nonzero" stroke="#E2A330">
+            <path d="M33.25,0 L4.75,0 C2.125625,0 0,2.125625 0,4.75 L0,28.5 C0,31.124375 2.125625,33.25 4.75,33.25 L14.0505,33.25 L19,38 L23.75,33.25 L33.25,33.25 C35.874375,33.25 38,31.124375 38,28.5 L38,4.75 C38,2.125625 35.874375,0 33.25,0 Z M26.9390662,17.8815976 L25.3515422,19.5663433 L18.9991322,26.3076923 L12.6467221,19.5663433 L11.0591982,17.8815976 C9.3050536,16.0193858 9.3050536,13.0024605 11.0591982,11.1402487 C12.8133427,9.27803677 15.6574637,9.27803677 17.4116082,11.1402487 L18.9991322,12.8249943 L20.5866562,11.1402487 C22.3408007,9.27803677 25.1849216,9.27803677 26.9390662,11.1402487 C28.6955249,13.0024605 28.6955249,16.0193858 26.9390662,17.8815976 Z" id="Shape-Copy-3"></path>
+        </g>
+    </g>
+</svg>
