@@ -148,6 +148,30 @@
         height: 250px;
     }
 
+    .founder-heading {
+            text-align: left;
+        }
+        .founder-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .founder-image img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+        @media (max-width: 767px) { /* Bootstrap breakpoint for small devices */
+            .founder-image {
+                margin-top: 20px;
+                width: 40px;
+            }
+            /* .founder-image img {
+                width: 40px;
+            } */
+        }
+
    @media (max-width:767px) {
     .about-heading img{
     display: none;
@@ -158,14 +182,6 @@
        display: none;
     }
 
-    .founder-heading img{
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        width: 400px;
-        height: 300px;
-    }
-   
    }
 
    .single-team-member {
