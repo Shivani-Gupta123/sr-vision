@@ -743,7 +743,34 @@ body.curtain-open #curtain-right {
     }
 }
 
+.accord-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
 
+.accord-btn h4 {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion.active .accord-content {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .accord-btn h4 {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .accord-content {
+        padding: 8px;
+    }
+}
   </style>  
 
 </head>
@@ -911,7 +938,7 @@ body.curtain-open #curtain-right {
                                         Home >
                                     </a>
                                 </li>
-                                <li class="nav-item navText ">
+                                <li class="nav-item navText padTop5 ">
                                     <a  class="nav-link " href="about.html" data-toggle="collapse">
                                         About Us >
                                     </a>
@@ -919,7 +946,7 @@ body.curtain-open #curtain-right {
                                 </li>
                     </li>
                     <div class="backdrop"></div>
-                    <li class="nav-item navText ">
+                    <li class="nav-item navText padTop5">
                         <a  class="nav-link " href="business.html" data-toggle="collapse">
                             Business >
                         </a>
@@ -929,7 +956,7 @@ body.curtain-open #curtain-right {
                    
                     <li class="nav-item navText padTop5">
                         <a class="nav-link  " href="careers.html">
-                            Oppurtunity >
+                            Opportunity >
                         </a>
                     </li>
                     <li class="nav-item navText padTop5">
@@ -1005,7 +1032,7 @@ body.curtain-open #curtain-right {
 </section>
 
 
-    <!-- <section class="overlayPop hide">
+    <section class="overlayPop hide">
         <div class="container">
             <div class="details">
                 <img src="common/cookies.svg" alt="Cookie"/>
@@ -1022,7 +1049,7 @@ body.curtain-open #curtain-right {
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 </div>
 
     
@@ -1075,7 +1102,7 @@ body.curtain-open #curtain-right {
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="clear"></div>
@@ -1100,7 +1127,7 @@ body.curtain-open #curtain-right {
 <section class="sliderElem hidden-xs hidden-sm"></section>
 
     
-</div> -->
+</div>
 
 <div class="banner">
     <div class="banner-image">
@@ -4315,7 +4342,7 @@ body.curtain-open #curtain-right {
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="accordion-box">
                     <!--Start single accordion box-->
-                    <div class="accordion ">
+                    <div class="accordion">
                         <div class="accord-btn">
                             <h4>Do you have the In-House team ?</h4>
                         </div>
@@ -4325,7 +4352,7 @@ body.curtain-open #curtain-right {
                     </div>
                     <!--End single accordion box-->
                     <!--Start single accordion box-->
-                    <div class="accordion ">
+                    <div class="accordion">
                         <div class="accord-btn">
                             <h4>Which type of material construction is expensive – Prefab or Wooden?</h4>
                         </div>
@@ -4335,7 +4362,7 @@ body.curtain-open #curtain-right {
                     </div>
                     <!--End single accordion box-->
                     <!--Start single accordion box-->
-                    <div class="accordion ">
+                    <div class="accordion">
                         <div class="accord-btn">
                             <h4>Is your wooden structure suitable for Indian Climatic condition?</h4>
                         </div>
@@ -4349,6 +4376,7 @@ body.curtain-open #curtain-right {
         </div>
     </div>
 </section>
+
 
 
 
@@ -5175,20 +5203,21 @@ observer.observe(document.body, { attributes: true, childList: true, subtree: tr
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const accordButtons = document.querySelectorAll('.accord-btn');
-        accordButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const content = button.nextElementSibling;
+        var accordions = document.querySelectorAll('.accordion');
 
-                // Close other open accordions
-                document.querySelectorAll('.accord-content').forEach(otherContent => {
-                    if (otherContent !== content) {
-                        otherContent.classList.remove('show');
-                    }
+        accordions.forEach(function(accordion) {
+            accordion.querySelector('.accord-btn').addEventListener('click', function() {
+                var isActive = accordion.classList.contains('active');
+                // Close all accordions
+                accordions.forEach(function(acc) {
+                    acc.classList.remove('active');
+                    acc.querySelector('.accord-content').style.display = 'none';
                 });
-
-                // Toggle the clicked accordion content
-                content.classList.toggle('show');
+                // Open clicked accordion if it was not already active
+                if (!isActive) {
+                    accordion.classList.add('active');
+                    accordion.querySelector('.accord-content').style.display = 'block';
+                }
             });
         });
     });
