@@ -566,7 +566,7 @@ a.nav-link.closeSearch{padding:2.8rem 2.6rem;margin:0}
 .collapseNav>ul>.icon{padding:0}
 .collapseNav>ul>.icon>.worldWideBoxIcon,.collapseNav>ul>.icon>.contactUsBoxIcon{margin:0;padding:3rem 2rem;float:left}
 .customNav>li.nav-item.icon:nth-child(7){padding-left:0rem}
-.navbar-collapse.d-block{display:block !important;width:83%;margin-left:17%;float:left !important;height:100vh;position:absolute;opacity:.96;padding-left:0;padding-top:0;overflow-y:auto}
+.navbar-collapse.d-block{display:block !important;width:83%;margin-left:0%;float:left !important;height:100vh;position:absolute;opacity:.96;padding-left:0;padding-top:0;overflow-y:auto}
 .explrtext{float:left}
 .clsBtn{margin:1rem 2rem 0 0}
 .hRExp{margin-top:5rem}
@@ -613,7 +613,7 @@ a.nav-link.closeSearch{padding:26px;margin:0}
 .collapseNav>ul>.icon{padding:0}
 .collapseNav>ul>.icon>.worldWideBoxIcon,.collapseNav>ul>.icon>.contactUsBoxIcon{margin:0;padding:3rem 2rem;float:left}
 .customNav>li.nav-item.icon:nth-child(7){padding-left:1.3rem}
-.navbar-collapse.d-block{display:block !important;width:45%;margin-left:55%;float:left !important;height:100vh;position:absolute;opacity:.9;padding-left:0;padding-top:0;overflow-y:auto}
+.navbar-collapse.d-block{display:block !important;width:45%;margin-left:0%;float:left !important;height:100vh;position:absolute;opacity:.9;padding-left:0;padding-top:0;overflow-y:auto}
 .explrtext{float:left}
 .clsBtn{margin:1rem 1.5rem 0 0}
 .hRExp{margin-top:5rem}
@@ -679,7 +679,7 @@ li.nav-item{font-size:1.4rem}
 .customNav>li.nav-item.icon:nth-child(7){padding-left:0rem}
 .navbar>.container{padding:0;width:100%}
 .navbar>.container>.tataLogo{margin-left:1.5rem !important}
-.navbar-collapse.d-block{display:block !important;width:35%;margin-left:65%;float:left;height:100vh !important;position:absolute;opacity:.9;padding:0;overflow-y:auto}
+.navbar-collapse.d-block{display:block !important;width:35%;margin-left:0%;float:left;height:100vh !important;position:absolute;opacity:.9;padding:0;overflow-y:auto}
 .explrtext{float:left;width:85% !important}
 .clsBtn{margin:1rem 1rem 0 0}
 .hRExp{margin-top:5rem}
