@@ -185,8 +185,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         animation: rollIn 4s ease-in-out;
     }
 
-   
-
     /* .blurred-background {
     position: absolute;
     top: 70px;
@@ -295,13 +293,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         }
 
     @media (min-width:967px){
+    
         .brand span{
-            font-size: 40px;
+            font-size: 55px;
             font-weight: bolder;
+            justify-content: center;
+            align-items: center;
         }
         .brand img{
-            height: 150px;
-            width: 150px;
+            height: 80px;
+            width: 80px;
         }
         .collapse ul{
             background-color: black;
@@ -669,14 +670,17 @@ body.curtain-open #curtain-right {
         text-align: center;
     }
     .brand img{
-        height: 90px;
-        width: 130px;
+        height: 40px;
+        width: 50px;
     }
     .brand .business-name{
         font-size: 16px;
     }
     .business-name{
-        font-size: 20px;
+        font-size: 30px;
+    }
+    .navbar {
+        margin-bottom: -10px;
     }
    
 }
@@ -689,8 +693,8 @@ body.curtain-open #curtain-right {
 
 .business-name {
     display: inline-block;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: bolder;
     background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
     background-size: 200% 200%;
     -webkit-background-clip: text;
@@ -910,12 +914,14 @@ body.curtain-open #curtain-right {
                         <a href="#login">Login</a>
                     </div>
                 </div>
-                <div style="padding-top: 10px;" class="brand">
-                    <a href="index.html"><img style="border-radius: 50%;" src="image/sr logo.jpg" alt="Logo"></a>
+                
+                <div style="border-bottom: 2px solid gray;" class="brand">
+                    <a href="index.html"><img style="border-radius: 50%; " src="image/sr logo.jpg" alt="Logo"></a>
                     <span class="business-name">SR Vision Multipreneur Business Deals & Services</span>       
                 </div>
-                <nav  class="navbar navbar-expand-lg  navEffect paddingTopInNav" role="navigation" >
-                    <button style="background-color: black;" type="button" class="navbar-toggle navBarBtn" data-toggle="collapse" data-target=".collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <nav   class="navbar navbar-expand-lg  navEffect paddingTopInNav" role="navigation" >
+                    <button style="background-color: black;" type="button" class="navbar-toggle navBarBtn pull-left" data-toggle="collapse" data-target=".collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" color="white" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                         </svg>
